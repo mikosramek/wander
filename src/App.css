@@ -1,0 +1,171 @@
+html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: ''; clear: both; height: 0; }
+
+html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+
+*, *:before, *:after {box-sizing: inherit}
+
+.visually-hidden:not(:focus):not(:active) { position: absolute !important; height: 1px; width: 1px; overflow: hidden; clip: rect(1px 1px 1px 1px); /* IE6, IE7 */ clip: rect(1px, 1px, 1px, 1px); white-space: nowrap; /* added line */}
+header {font-size: 20px;}
+
+@import url('https://fonts.googleapis.com/css?family=DM+Serif+Display&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+img { display: block; width: 100%; }
+html { font-size: 62.5%; }
+a, a:visited { text-decoration: none; color: inherit; }
+ul { list-style: none; padding: 0; margin: 0; }
+
+textarea {
+  resize: none;
+  border: 1px solid #93939322;
+  padding: 10px;
+}
+
+p2 {
+  font-family: 'Open Sans' ;
+  padding: 40px 0;
+  margin: 0;
+  font-size: 1.6rem;
+}
+
+h2 {
+  font-family: 'Open Sans' ;
+  font-weight: lighter;
+  padding: 10px;
+  font-size: 1.6rem;
+}
+
+button {
+  font-family: 'Open Sans' ;
+  margin: 10px;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  background-color: #5C5C5C;
+  padding: 10px;
+  opacity: 1;
+  transition: opacity 0.35s;
+}
+
+button:disabled {
+  opacity: 0.5;
+}
+
+button:hover {
+
+}
+
+button:focus {
+
+}
+
+.wrapper {
+  max-width: 1080px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.title {
+  font-family: 'Open Sans' ;
+  text-align: center;
+  padding: 50px 0;
+  margin: 0;
+  font-size: 1.6rem;
+}
+
+form {
+  font-family: 'DM Serif Display' ;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.page {
+  min-height: 100vh;
+  
+}
+
+.thoughtForm input {
+  font-family: 'DM Serif Display' ;
+  background-color: none;
+  border: none;
+  border-bottom: 1px solid #000;
+  padding: 0 10px;
+}
+
+
+.thoughtForm input, .thoughtForm label, .thoughtForm p {
+  margin: 5px 0;
+  line-height: 30px;
+}
+
+.eventPlaceholder, input::placeholder {
+  color: #939393;
+  opacity: 0.4;
+}
+
+.actions, .flexLine {
+  display: flex;
+}
+
+.flexLine label {
+  padding-right: 5px;
+}
+
+.flexLine input {
+  flex-basis: 60%;
+}
+
+.actions input {
+  width: 40%;
+}
+
+.actions label {
+  position: relative;
+  bottom: 1.5px;
+  width: 15%;
+  text-align: center;
+}
+
+.actions p {
+  width: 5%;
+}
+
+.event {
+  color: #7D68FF;
+ }
+
+.action {
+   color: #689BFF;
+ }
+
+.result {
+   color: #FF6868;
+ }
+
+ .timeSelect select, .timeSelect input {
+   height: 40px;
+   border: 1px solid #93939344;
+   padding: 5px;
+ }
+
+.timeSelect select {
+  appearance: none;
+  width: 40%;
+  border-left: none;
+  background: url("./Assets/arrow.svg");
+  background-repeat: no-repeat;
+  background-position: 95%;
+}
+
+.timeSelect input {
+  width: 60%;
+}
+
+.icon {
+  width: 300px;
+}
