@@ -1,6 +1,7 @@
 import React from 'react';
 import ScrollButton from './ScrollButton';
 import {Link} from 'react-router-dom';
+import scrollButton from './ScrollButton';
 
 
 function ThoughtForm() {
@@ -21,8 +22,13 @@ const eventText = event ? <span className="event"> {event} </span> :<span classN
   return (
     <div className="wrapper">
       <main>
+        <section className="page"> 
+          <p className="title"> Think,</p>
+          <p className="title"> What are you worried about the most right now?</p>
+          <ScrollButton enabled/>
+        </section>
         <section className="page">
-          <p className="title">What are you scared of right now?</p>
+          <p className="title">What are you worried about the most right now?</p>
   
           <form className="thoughtForm">
             <label htmlFor="event">I'm worried about</label>
