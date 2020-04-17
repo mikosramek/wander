@@ -115,20 +115,23 @@
 
 
 .intro .meteor2-small {
-    right: 50px;
-    width: 100px;
+    top: 55%;
+    left: 60%;
+    width: 25%;
     animation-delay: 0.5s;
 }
 
 .intro .meteor2-big {
     right: 0;
-    bottom: 110px;
-    width: 150px;
+    bottom: 20%;
+    width: 40%;
 }
 
 .intro .meteor3 {
+    position: absolute;
     left: 33%;
-    bottom: 120px;
+    width: 50%;
+    bottom: 22%;
 }
 
 

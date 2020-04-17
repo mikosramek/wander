@@ -18,7 +18,7 @@ import ticketbg from '../Assets/ticketbg.svg';
 
 function ThoughtForm() {
 
-  const [offset, setOffset] = React.useState(8);
+  const [offset, setOffset] = React.useState(7);
   const nextPage = () => {
     setOffset(offset + 1);
   }
@@ -252,7 +252,9 @@ function ThoughtForm() {
                   onChange={(e) => {
                     setRFaction1(e.target.value)
                   }
-                  } />
+                  } 
+                  placeholder="an action you'll take"
+                  />
                 <p></p>
               </div>
               <label htmlFor="gain">And it's okay even if it ends up being {`${result}`}, because I'll gain</label>
@@ -262,7 +264,9 @@ function ThoughtForm() {
                 onChange={(e) => {
                   setGain(e.target.value)
                 }
-                } />
+                } 
+                placeholder="something you can take away"
+                />
               <p>from the experience.</p>
 
               <label htmlFor="rfmitigation">I'll help myself feel better by</label>
@@ -272,7 +276,9 @@ function ThoughtForm() {
                 value={rfmitigation}
                 onChange={
                   (e) => { setRFmitigation(e.target.value) }
-                } />
+                } 
+                placeholder="an action that comforts you"
+                />
 
               <ScrollButton className="RFbutton" enabled={rfaction1 && gain && rfmitigation} text="Next" scroll={nextPage} />
 
@@ -291,9 +297,6 @@ function ThoughtForm() {
 
 
           <section className="thoughts page receipt">
-          <div className="ticketbg">
-              <img src={ticketbg} alt="" />
-            </div>
             <div className="ticket">
               <div className="flex dates">
                 <p>{new Date().toLocaleString('default', { month: 'long' })} {new Date().getDate()}</p>
@@ -326,9 +329,6 @@ function ThoughtForm() {
           </section>
 
           <section className="thoughts page receipt">
-          <div className="ticketbg">
-              <img src={ticketbg} alt="" />
-            </div>
             <div className="ticket">
               <p>This event usually affects me for {effectTime} {effectTimeUnit}.</p>
               <div className="dotted-line"></div>
