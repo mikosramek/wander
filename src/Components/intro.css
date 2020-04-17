@@ -113,9 +113,6 @@
     display: block;
 }
 
-.intro .meteor {
-    animation: meteor 2s infinite linear;
-}
 
 .intro .meteor2-small {
     right: 50px;
@@ -134,15 +131,6 @@
     bottom: 120px;
 }
 
-@keyframes meteor {
-    0%, 100% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.1);
-    }
-}
-
 
 .intro a  {
     font-family: 'Work Sans', sans-serif;
@@ -158,6 +146,11 @@
     color: #1D2541;
     padding: 20px;
     border-radius: 100px;
+}
+
+a:hover {
+    background-color: #FFEEC7;
+    transition: 0.5s;
 }
 
 

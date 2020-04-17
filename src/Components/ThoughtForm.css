@@ -1,0 +1,617 @@
+.thoughtForm {
+    max-width: 375px;
+    width: 80%;
+    position: relative;
+    font-family: 'Patrick Hand', sans-serif;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+    color: #fff;
+  }
+
+.RFthoughtForm {
+    top: 100px;
+    max-width: 375px;
+    width: 80%;
+    position: relative;
+    font-family: 'Patrick Hand', sans-serif;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+    color: #1D2541;
+  }
+
+.thought{
+    max-width: 375px;
+    margin: 0 auto;
+    overflow: hidden;
+    min-height: 100vh;
+    height: 667px;
+}
+
+.thought .solo-title {
+    text-align: center;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 2.2rem;
+    margin-top: 300px;
+}
+
+.thought .bg-image {
+    position: absolute;
+    width: 100%;
+}
+
+.thought .bg-image.bottom {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.thought .bg-stars {
+    position: absolute;
+    left: 5%;
+    top: 2%;
+    width: 90%;
+}
+
+.thought .ticketbg {
+    position: absolute;
+}
+
+.thought section {
+    min-height: 100vh;
+    height: 667px;
+    text-align: left;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+.thought button {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+    position: relative;
+    z-index: 999;
+    background-color: #FFDC88;
+    width: 85%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 100px;
+    color: #1D2541;
+    padding: 20px;
+    border-radius: 100px;
+}
+
+.thought button:hover {
+    background-color: #FFEEC7;
+    transition: 0.5s;
+}
+
+.thought button.back {
+    color: #FFDC88;
+    background-color: #1D2541;
+    border: 1px solid #FFDC88;
+    margin-top: 20px;
+}
+
+.thoughtForm input {
+    font-family: 'Patrick Hand', sans-serif;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #fff;
+    padding: 0 10px;
+  }
+
+.RFthoughtForm input {
+    font-family: 'Patrick Hand', sans-serif;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #1D2541;
+    padding: 0 10px;
+}
+  
+  
+.thoughtForm input, .thoughtForm label, .thoughtForm p {
+    margin: 5px 0;
+    line-height: 30px;
+  }
+
+
+.thought .meteor {
+      left: 10%;
+      top: 12%;
+      width: 80%;
+  }
+
+.thought .meteor.worrysummary {
+    top: 38px;
+    width: 250px;
+    left: 100px;
+}  
+
+.thought .summary {
+    position: relative;
+    padding-top: 60%;
+    margin: 0 auto;
+    width: 80%;
+    font-family: 'Patrick Hand', sans-serif;
+    font-size: 2.4rem;
+    padding-bottom: 20px;
+  }
+
+.thoughtForm .action-text {
+    text-align: center;
+    font-size: 2.0rem;
+    margin: 5px;
+    line-height: 20px;
+  }
+
+.thoughtForm .action-text:first-of-type {
+    margin-top: 30px;
+  }
+
+.thoughtForm .action-text:nth-last-of-type(2) {
+    margin-bottom: 30px;
+}
+
+.thoughtForm .prompt {
+    text-align: center;
+    font-family: 'Work Sans', sans-serif;
+  }
+
+.thoughtForm textarea {
+    font-family: 'Patrick Hand',sans-serif;
+    resize: none;
+    border: none;
+    color: #fff;
+    padding: 10px;
+    background: none;
+  }
+
+  .thoughtForm select, .thoughtForm input {
+      color: #fff;
+  }
+
+  .thoughtForm select { 
+      border: none;
+  }
+
+  .timeSelect select, .timeSelect input {
+    height: 40px;
+    padding: 5px;
+  }
+ 
+  .timeSelect {
+      margin-top: 125px;
+      margin-bottom: 25px;
+  }
+
+ .timeSelect select {
+   appearance: none;
+   width: 40%;
+   border-left: none;
+   background: url("../Assets/arrow.svg");
+   background-repeat: no-repeat;
+   background-position: 95%;
+ }
+ 
+.timeSelect input {
+   width: 60%;
+ }
+
+.RFthoughtForm button {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+    position: relative;
+    z-index: 999;
+    background-color: #FFAE88;
+    width: 85%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 100px;
+    color: #1D2541;
+    padding: 20px;
+    border-radius: 100px;
+    border: none;
+}
+
+.animation .one {
+    width: 40%;
+    left: 100px;
+    top: 100px;
+    transition: all 1s;
+}
+.one.animate {
+    top: 400px;
+    left: 140px;
+}
+
+.animation .two {
+    top: 450px;
+    left: 140px;
+    transition: all 1s;
+}
+.two.animate {
+    top: 390px;
+    left: 180px;
+}
+
+.animation .three {
+    top: 200px;
+    width: 75%;
+    left: 80px;
+    transition: all 1s;
+}
+.three.animate {
+    top: 400px;
+}
+
+.bubble {
+    position: relative;
+    animation: bubble 7s infinite linear;
+    z-index: 2;
+}
+
+.bubbletwo {
+    animation: bubbletwo 10s infinite linear;
+    position: relative;
+    top: 55px;
+    left: -15px;
+    width: 180px;
+}
+
+.bubblethree {
+    animation: bubblethree 10s infinite linear;
+    position: relative;
+    top: 55px;
+    left: -15px;
+    width: 180px;
+}
+
+.summary {
+    top: 80px;
+}
+
+@keyframes bubble{
+    0%, 100% {
+        transform: translateY(0px);
+        transform: rotateZ(0deg);
+    }
+    50% {
+        transform: translateY(50px);
+        transform: rotate(-25deg);
+    }
+
+}
+
+@keyframes bubbletwo{
+    0%, 100% {
+        transform: translateY(0px);
+        transform: rotateZ(0deg);
+    }
+    50% {
+        transform: translateY(20px);
+        transform: rotate(40deg);
+    }
+
+}
+
+@keyframes bubblethree{
+    0%, 100% {
+        transform: translateY(0px);
+        transform: rotateZ(0deg);
+    }
+    50% {
+        transform: translateY(20px);
+        transform: rotate(-90deg);
+    }
+
+}
+
+.animation .one .bubble{
+    top: 10px;
+    width: 60%;
+}
+
+.animation .one .meteor {
+    animation-duration: 1.8s;
+}
+
+.animation .two .meteor {
+    animation-delay: 0.1s;
+    animation-duration: 1.5s;
+}
+
+.animation .three .meteor {
+    animation-delay: 0.2s;
+}
+
+.stars {
+    position: absolute;
+    width: 30px;
+    z-index: -1;
+}
+.starone {
+    animation: starone 3s infinite linear;
+    position: relative;
+    left: 25px;
+    top: 30px;
+}
+
+.startwo {
+    animation: starone 2s infinite linear;
+    position: relative;
+    left: 40px;
+    top: 25px;
+}
+
+.two .meteor {
+    width: 220px;
+  }
+
+.three .meteor {
+    width: 280px;;
+}
+
+.starthree {
+    animation: starone 2s infinite linear;
+    position: relative;
+    width: 60px;
+    left: 40px;
+    top: 150px;
+}
+
+.starfour {
+    animation: starone 2s infinite linear;
+    position: relative;
+    width: 55px;
+    left: 40px;
+    top: 35px;
+}
+
+.starfive {
+    animation: starone 2s infinite linear;
+    position: relative;
+    width: 80px;
+    left: 40px;
+    top: 100px;
+}
+
+.starone .star {
+    fill: #88C6FF;
+}
+
+.startwo .star {
+    fill: #FDFF88;
+}
+
+.starthree .star {
+    fill: #FF8888;
+}
+.starfour .star {
+    fill: #FDFF88;
+}
+
+.starfive .star {
+    fill: #88FFC6;
+}
+
+@keyframes starone {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(5px);
+    }
+
+}
+
+@keyframes startwo {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(6px);
+    }
+}
+
+.bubble-quote {
+    border: 1px solid #fff;
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(100% - 50px);
+    min-height: 25%;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(15vh);
+    font-size: 2.4rem;
+    margin: 0 25px;
+    padding: 25px;
+    border-radius: 25px;
+    position: relative;
+    cursor: pointer;
+}
+.bubble-quote:hover {
+    color:#FDFF88;
+    border: 1px solid #FDFF88;
+}
+.bubble-quote::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 10px;
+    height: 75px;
+    bottom: -75px;
+    background: none;
+    border-right: 1px solid #fff;
+}
+.bubble-quote:hover::after {
+    border-right: 1px solid #FDFF88;
+}
+
+
+
+.receipt {
+    background-color: #fff;
+}
+.ticket {
+    position: relative;
+    background-color: #FFE8E3;
+    color: #1D2541;
+    padding: 21px 13px;
+    width: 85%;
+    margin: 30px auto;
+    box-shadow: 3px 3px 4px rgba(107, 48, 35, 0.13);
+}
+.ticket .flex {
+    display: flex;
+    justify-content: space-between;
+}
+.ticket .dates {
+    width: calc(100% - 30px);
+}
+.ticket .dates p {
+    font-size: 1.4rem;
+    font-family: 'Work Sans', sans-serif;
+    margin: 0;
+    margin-bottom: 9px;
+}
+.ticket p {
+    font-size: 16px;
+}
+.ticket h2 {
+    position: relative;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+    padding: 13px 0;
+    padding-right: 30px;
+    margin: 0;
+    z-index: 2;
+}
+.ticket h2::after {
+    content: '';
+    display: block;
+    background-color: #FF8888;
+    box-shadow: 0px 3px 4px rgba(175, 64, 64, 0.17);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -30px;
+    z-index: -1;
+}
+.ticket h3 {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 16px;
+}
+.ticket .ticket__summary {
+    align-items: start;
+}
+.ticket .ticket__summary img{
+    width: 22px;
+}
+.ticket .ticket__summary p{
+    width: calc(100% - 22px - 8.32px);
+    margin: 0;
+    margin-left: 8.32px;
+}
+.ticket .dotted-line {
+    height: 1px;
+    width: 100%;
+    border-bottom: 1px dashed #1D2541;
+    margin-top: 24px;
+    margin-bottom: 13px;
+}
+
+.ticket .stickynote {
+    position: relative;
+    padding: 22px 5px;
+}
+.ticket .stickynote::after {
+    content: '';
+    display: block;
+    background-color: #FFF1BF;
+    box-shadow: 0px 3px 4px rgba(175, 64, 64, 0.17);
+    width: calc(100% + 30px);
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -30px;
+    z-index: 0;
+}
+.ticket .quotes {
+    width: calc(100% - 22px - 8.32px);
+    margin: 0;
+    margin-left: 8.32px;
+    position: relative;
+    z-index: 1;
+}
+.quotes p {
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+.ticket .stars {
+    z-index: 1;
+    position: relative;
+    left: -15px;
+}
+.ticket .stars div {
+    position: relative;
+    z-index: 99;
+    width: 40px;
+    height: 40px;
+}
+.ticket .red .star {
+    fill: #F8888F;
+}
+.ticket .blue .star {
+    fill: #88C6FF;
+}
+.ticket .green .star {
+    fill: #88FFC6;
+}
+.ticket .yellow .star {
+    fill: #FDFF88;
+}
+.ticket .orange .star {
+    fill: #FDFF88;
+}
+.ticket .sticky {
+    position: absolute;
+    bottom: -45px;
+    left: 0;
+}
+
+.ticket .accent { 
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    font-size: 1.8rem;
+    padding: 13px 0;
+}
+
+.ticket .accent::after {
+    content: '';
+    display: block;
+    background-color: #1D2541;
+    box-shadow: 0px 3px 4px rgba(175, 64, 64, 0.17);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -30px;
+    z-index: -1;
+}
+
+.ticket .accent span {
+    display: block;
+}

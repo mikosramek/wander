@@ -19,22 +19,11 @@ html { font-size: 62.5%; }
 a, a:visited { text-decoration: none; color: inherit; }
 ul { list-style: none; padding: 0; margin: 0; }
 
-textarea {
-  resize: none;
-  border: 1px solid #93939322;
-  padding: 10px;
-}
+
 
 body {
   background-color: #1D2541;
   font-family: 'Patrick Hand', sans-serif;
-}
-
-p2 {
-  font-family: 'Work Sans', sans-serif;
-  padding: 40px 0;
-  margin: 0;
-  font-size: 1.6rem;
 }
 
 h2 {
@@ -46,6 +35,8 @@ h2 {
 
 button {
   padding: 10px;
+  cursor: pointer;
+  border: none;
 }
 
 button:disabled {
@@ -71,6 +62,7 @@ span.underline {
 }
 
 .title {
+  position: relative;
   font-family: 'Work Sans', sans-serif ;
   color: #fff;
   text-align: center;
@@ -79,32 +71,27 @@ span.underline {
   font-size: 2.0rem;
 }
 
-form {
-  font-family: 'Patrick Hand', sans-serif;
-  font-size: 2rem;
-  display: flex;
-  flex-direction: column;
-  max-width: 400px;
-  margin: 0 auto;
-  color: #fff;
+.RFtitle {
+  position: relative;
+  font-family: 'Work Sans', sans-serif ;
+  color: #1D2541;
+  text-align: center;
+  padding: 50px 0;
+  margin: 0;
+  font-size: 2.0rem;
+}
+
+.line-space {
+  display: block;
 }
 
 .page {
   min-height: 100vh;
 }
 
-.thoughtForm input {
-  font-family: 'Patrick Hand', sans-serif;
-  background-color: #1D2541;
-  border: none;
-  border-bottom: 1px solid #fff;
-  padding: 0 10px;
-}
-
-
-.thoughtForm input, .thoughtForm label, .thoughtForm p {
-  margin: 5px 0;
-  line-height: 30px;
+.RFpage {
+  min-height: 100vh;
+  background-color: #fff;
 }
 
 .eventPlaceholder, input::placeholder {
@@ -151,26 +138,48 @@ form {
    color: #FF6868;
  }
 
- .timeSelect select, .timeSelect input {
-   height: 40px;
-   border: 1px solid #93939344;
-   padding: 5px;
- }
-
-.timeSelect select {
-  appearance: none;
-  width: 40%;
-  border-left: none;
-  background: url("./Assets/arrow.svg");
-  background-repeat: no-repeat;
-  background-position: 95%;
-}
-
-.timeSelect input {
-  width: 60%;
-}
 
 .icon {
   width: 300px;
 }
 
+.meteor {
+  animation: meteor 1s infinite linear;
+}
+
+
+@keyframes meteor {
+  0%, 100% {
+      transform: scale(1);
+  }
+  50% {
+      transform: scale(1.1);
+  }
+}
+
+@keyframes meteortwo {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+      transform: scale(1.5);
+  }
+}
+
+.wiggly {
+  animation: wiggly 1s infinite;
+  display: inline-block;
+}
+.wiggly.space {
+  min-width: 5px;
+  height: 5px;
+}
+
+@keyframes wiggly {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(1px);
+  }
+}

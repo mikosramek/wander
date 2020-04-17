@@ -2,14 +2,13 @@ import React from 'react'
 
 
 const scrollButton = (props) => {
-    const scroll = (e) => {
+    const scrollEvent = (e) => {
         e.preventDefault();
-        const pageHeight = window.innerHeight;
-        window.scrollBy(0, pageHeight);
+        props.scroll();
     }
     return(
-        <button onClick = {scroll} disabled = {!props.enabled}>
-            Next
+        <button onClick = {scrollEvent} disabled = {!props.enabled} className={props.className}>
+            {props.text}
         </button>
     )
 }
