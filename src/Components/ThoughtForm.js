@@ -18,7 +18,7 @@ import ticketbg from '../Assets/ticketbg.svg';
 
 function ThoughtForm() {
 
-  const [offset, setOffset] = React.useState(0);
+  const [offset, setOffset] = React.useState(8);
   const nextPage = () => {
     setOffset(offset + 1);
   }

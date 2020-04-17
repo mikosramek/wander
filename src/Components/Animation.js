@@ -56,11 +56,12 @@ const progress = () => {
                         ? <div className="meteor">
                             <img src={meteor} alt="" />
                         </div>
+                        
+
                         : <div>
                             <div className="stars">
                                 <Starboy className="starone" />
                                 <Starboy className="startwo" />
-
                             </div>
                             {
                                 state1 === 1
@@ -132,7 +133,10 @@ const progress = () => {
                             "<WigglyText text={paragraphs[paragraphIndex]}/>"
                         </p>
                     </div>
-                    : <ScrollButton enabled text="See my thought record" scroll={progress} />
+
+                    : paragraphIndex >= paragraphs.length
+                    ? <ScrollButton enabled text="See my thought record" scroll={progress} />
+                    : null
             }
 
 
