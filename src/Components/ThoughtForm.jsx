@@ -11,10 +11,14 @@ import meteor from "../Assets/meteor.svg";
 import blob from "../Assets/blob.svg";
 import blob2 from "../Assets/blob_2.svg";
 import sadface from "../Assets/sadface.svg";
+import happyface from "../Assets/happyface.svg";
 import sticky from "../Assets/sticky.svg";
+import leftChevron from "../Assets/left-chevron.svg";
+import ticketEnd from "../Assets/ticket-tear.svg";
+import ticketEndShadow from "../Assets/ticket-tear-shadow.svg";
 
 function ThoughtForm() {
-  const [offset, setOffset] = React.useState(0);
+  const [offset, setOffset] = React.useState(9);
   const nextPage = () => {
     setOffset(offset + 1);
   };
@@ -22,12 +26,16 @@ function ThoughtForm() {
     setOffset(offset - 1);
   };
 
-  const [event, setEvent] = React.useState("");
-  const [action1, setAction1] = React.useState("");
-  const [action2, setAction2] = React.useState("");
-  const [result, setResult] = React.useState("");
-  const [actionThoughts, setactionThoughts] = React.useState("");
-  const [resultThoughts, setresultThoughts] = React.useState("");
+  const [event, setEvent] = React.useState("Thesis presentation");
+  const [action1, setAction1] = React.useState("stutter");
+  const [action2, setAction2] = React.useState("forget the material");
+  const [result, setResult] = React.useState("a disaster");
+  const [actionThoughts, setactionThoughts] = React.useState(
+    "The presentation makes me feel uncomfortable, but I’ll practice lots and understand my material to try my best."
+  );
+  const [resultThoughts, setresultThoughts] = React.useState(
+    "And it’s okay even if it’s a failure, because I’ll gain public speaking skills from the experience."
+  );
   const [effectTime, setEffectTime] = React.useState(0);
   const [effectTimeUnit, setEffectTimeUnit] = React.useState("Hours");
 
@@ -70,6 +78,8 @@ function ThoughtForm() {
     setEffectTimeUnit("Hours");
     setOffset(0);
   };
+
+  const now = new Date();
 
   return (
     <div className="wrapper">
@@ -440,32 +450,65 @@ function ThoughtForm() {
           </section>
 
           <section className="thoughts page receipt">
+            <div className="headerBar">
+              <button onClick={nextPage} class="headerBar__button">
+                <img src={leftChevron} alt="" /> Back to collection
+              </button>
+            </div>
             <div className="ticket">
               <div className="flex dates">
                 <p>
-                  {new Date().toLocaleString("default", { month: "long" })}{" "}
-                  {new Date().getDate()}
+                  {now.toLocaleString("default", { weekday: "long" })},{" "}
+                  {now.toLocaleString("default", { month: "long" })}{" "}
+                  {now.getDate()}
                 </p>
                 <p>
-                  {new Date().getHours() % 12}:{new Date().getMinutes()}
+                  {now.getHours() % 12}:
+                  {now.getMinutes() < 10
+                    ? "0" + now.getMinutes()
+                    : now.getMinutes()}
+                  {now.getHours() < 12 ? "am" : "pm"}
                 </p>
               </div>
               <h2>{event}</h2>
-              <h3>Summary</h3>
+              <h3>Worry Summary</h3>
               <div className="flex ticket__summary">
                 <img src={sadface} alt="" />
-                <p>{`"I'm worried about ${event}, because I'm scared I will ${action1} and ${action2}, resulting in ${event} to be ${result}."`}</p>
+                <p>
+                  "I'm worried about <span className="event">{event}</span>,
+                  because I'm scared I will{" "}
+                  <span className="action">{action1}</span> and{" "}
+                  <span className="action">{action2}</span>, resulting in{" "}
+                  <span className="event">{event}</span> being{" "}
+                  <span className="result">{result}</span>."
+                </p>
               </div>
-              <div className="dotted-line"></div>
-              <div className="flex stickynote">
-                <div className="stars">
+              {/* <div className="dotted-line" /> */}
+              <h3>Reassurance</h3>
+              <div className="flex ticket__summary">
+                <img src={happyface} alt="" />
+                <p>
+                  <div className="">
+                    <span>"{actionThoughts}"</span>
+                    <br />
+                    <br />
+                    <span>"{resultThoughts}"</span>
+                  </div>
+                </p>
+              </div>
+              <img src={ticketEndShadow} alt="" className="ticketShadow" />
+            </div>
+            <img src={ticketEnd} alt="" className="ticketEnd" />
+            {/* <div className="dotted-line"></div>
+              <div className="flex stickynote"> */}
+            {/* <div className="stars">
                   <Starboy className="red" />
                   <Starboy className="yellow" />
                   <Starboy className="blue" />
                   <Starboy className="green" />
                   <Starboy className="yellow" />
-                </div>
-                <div className="quotes">
+                </div> */}
+            {/* <div className="quotes">
                   <p>I'll {rfaction1} to try my best to get through this!</p>
                   <p>
                     And if it does turn out to be {result}, I'll help myself
@@ -475,8 +518,8 @@ function ThoughtForm() {
                 </div>
               </div>
               <img src={sticky} className="sticky" alt="" />
-            </div>
-            <ScrollButton enabled text="Next" scroll={nextPage} />
+            </div> */}
+            {/* <ScrollButton enabled text="Next" scroll={nextPage} /> */}
           </section>
 
           <section className="thoughts page receipt">

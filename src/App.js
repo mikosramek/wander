@@ -1,12 +1,10 @@
-import React from 'react';
-import {BrowserRouter as Router, Route} from 'react-router-dom';
-import './App.css';
-import ThoughtForm from './Components/ThoughtForm';
-import Intro from './Components/Intro';
-
+import React from "react";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import "./App.css";
+import ThoughtForm from "./Components/ThoughtForm.jsx";
+import Intro from "./Components/Intro";
 
 function App() {
-
   return (
     <Router>
       <Route exact path="/" component={Intro} />
